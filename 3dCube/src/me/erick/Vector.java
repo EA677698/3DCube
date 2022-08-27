@@ -5,6 +5,15 @@ public class Vector {
 
     public float x,y,z,vx,vy,vz;
 
+    public Vector(float x, float y, float z){
+        this.x = x;
+        this.y = y;
+        this.z = z;
+        setVisiblePoints();
+    }
+
+    public Vector(){}
+
     public void setAllThreePoints(int num){
         x = num;
         y = num;
